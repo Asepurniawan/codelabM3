@@ -1,4 +1,4 @@
-Tentu, ini adalah contoh file **README.md** yang sesuai untuk kode program Java penghitung luas persegi panjang tersebut.
+
 
 # 📐 Program Penghitung Luas Persegi Panjang
 
