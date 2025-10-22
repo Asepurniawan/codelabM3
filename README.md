@@ -1,18 +1,85 @@
-## Getting Started
+Tentu, ini adalah contoh file **README.md** yang sesuai untuk kode program Java penghitung luas persegi panjang tersebut.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# 📐 Program Penghitung Luas Persegi Panjang
 
-## Folder Structure
+## Deskripsi
 
-The workspace contains two folders by default, where:
+Program sederhana ini ditulis dalam bahasa **Java** dan berfungsi untuk menghitung **luas persegi panjang** berdasarkan input panjang dan lebar yang dimasukkan oleh pengguna. Program ini menggunakan kelas `Scanner` untuk memfasilitasi interaksi pengguna melalui konsol.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🚀 Cara Menjalankan
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Persyaratan
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Pastikan Anda sudah menginstal **Java Development Kit (JDK)** di sistem Anda.
 
-## Dependency Management
+### 1\. Kompilasi (Compile)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Buka terminal atau Command Prompt, arahkan ke direktori tempat Anda menyimpan file `LuasPersegiPanjang.java`, kemudian kompilasi kode:
+
+```bash
+javac LuasPersegiPanjang.java
+```
+
+### 2\. Eksekusi (Run)
+
+Setelah berhasil dikompilasi, jalankan program menggunakan perintah berikut:
+
+```bash
+java LuasPersegiPanjang
+```
+
+### 3\. Interaksi
+
+Program akan meminta Anda memasukkan nilai panjang dan lebar. Masukkan angka (boleh menggunakan desimal) dan tekan `Enter` setelah setiap input.
+
+## 📝 Kode Sumber (`LuasPersegiPanjang.java`)
+
+```java
+import java.util.Scanner;
+
+public class LuasPersegiPanjang {
+
+    public static void main(String[] args) {
+        // Mendeklarasikan variabel untuk panjang, lebar, dan luas
+        double panjang;
+        double lebar;
+        double luas;
+
+        // Membuat objek Scanner untuk menerima input dari pengguna
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("--- Program Menghitung Luas Persegi Panjang ---");
+
+        // Meminta pengguna memasukkan panjang
+        System.out.print("Masukkan nilai panjang: ");
+        panjang = input.nextDouble();
+
+        // Meminta pengguna memasukkan lebar
+        System.out.print("Masukkan nilai lebar: ");
+        lebar = input.nextDouble();
+
+        // Menghitung luas persegi panjang (Rumus: Luas = Panjang * Lebar)
+        luas = panjang * lebar;
+
+        // Menampilkan hasil perhitungan
+        System.out.println("\n--- Hasil Perhitungan ---");
+        System.out.println("Panjang: " + panjang);
+        System.out.println("Lebar: " + lebar);
+        System.out.println("Luas Persegi Panjang adalah: " + luas);
+        
+        // Menutup objek Scanner
+        input.close();
+    }
+}
+```
+
+## 💡 Rumus yang Digunakan
+
+Perhitungan luas persegi panjang menggunakan rumus dasar:
+
+$$
+\text{Luas} = \text{Panjang} \times \text{Lebar}
+$$## 🤝 Kontribusi
+
+Jika Anda menemukan *bug* atau memiliki saran perbaikan, silakan buat *pull request* atau buka *issue* di repositori ini.
+$$
